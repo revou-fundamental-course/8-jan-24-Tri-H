@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/style.css" />
+		<title>Katik</title>
+	</head>
+	<body>
+		<header class="header">
+			<div class="container header-content">
+				<span class="header-title">Katik*</span>
+			</div>
+		</header>
+
+		<main class="container">
+			<section>
+				<div class="hero">
+					<h1 class="hero-title">Welcome to Katik</h1>
+					<p class="hero-description">
+						Sebuah web app sederhana yang dirancang untuk menghitung luas dan
+						keliling persegi.
+					</p>
+				</div>
+			</section>
+			<section class="section">
+				<nav class="tabs">
+					<button data-tab="luas" class="tab tab-active">Luas</button>
+					<button data-tab="keliling" class="tab">Keliling</button>
+				</nav>
+				<div class="contents">
+					<div class="rectangle">
+						<img src="assets/persegi.png" alt="persegi" class="rectangle-img" />
+						<div>
+							<p>Rumus</p>
+							<p class="formula">Luas = Sisi x Sisi</p>
+						</div>
+					</div>
+					<div class="card">
+						<h3 class="card-title">Luas Persegi</h3>
+						<form class="card-content">
+							<div>
+								<label for="input-field" class="hidden"> Panjang sisi </label>
+								<input
+									id="input-field"
+									type="number"
+									name="sisi"
+									placeholder="Masukkan panjang sisi"
+									class="input-field"
+								/>
+								<p class="alert-message hidden"></p>
+							</div>
+							<div class="card-button">
+								<button id="submit-button" type="submit" class="btn" disabled>
+									Hitung
+								</button>
+								<button id="reset-button" type="reset" class="btn btn-outline">
+									Reset
+								</button>
+							</div>
+						</form>
+						<div class="card-footer">
+							<span class="result"></span>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="container footer-content">
+				<a href="https://github.com/Tri-H" target="_blank">Tri Hartanto</a>
+				<p>© 2024</p>
+			</div>
+		</footer>
+
+		<script src="js/script.js"></script>
+	</body>
+</html>
