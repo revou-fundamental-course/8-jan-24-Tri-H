@@ -215,6 +215,13 @@ p {
 	}
 }
 
+.contents {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	padding: 24px 0;
+}
+
 .card {
 	width: 100%;
 	padding: 24px;
@@ -279,10 +286,12 @@ p {
 
 .rectangle {
 	display: flex;
+	gap: 24px;
 	align-items: center;
 	justify-content: center;
 
 	.rectangle-img {
+		object-fit: contain;
 		height: 192px;
 		width: 192px;
 	}
@@ -300,16 +309,11 @@ p {
 	}
 }
 
-@media screen and (min-width: 640px) {
-}
-
 @media screen and (min-width: 768px) {
 	.contents {
-		display: flex;
+		flex-direction: row;
 		align-items: center;
 		justify-content: space-between;
-		gap: 24px;
-		padding: 24px 0;
 	}
 
 	.card {
